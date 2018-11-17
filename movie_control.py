@@ -94,9 +94,11 @@ class MovieKnowledgeBase:
 
         #todo read old base
 
+
     def __del__(self):
         # todo
         return
+
 
     def __write_base (self):
         """
@@ -152,6 +154,7 @@ class MovieKnowledgeBase:
     def del_movie (self, movie_name):
         # todo
         return
+
 
     def add_movie (self, movie):
         if type(movie) is not Movie:
