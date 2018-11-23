@@ -1,9 +1,22 @@
 :- consult('movies.pl').
 
-print :- forall(movie(M), (write(M), nl)).
+% Print all movies in knowlagebase
+print_all_movies :- forall(movie(M), (write(M), nl)).
 
-same_genre(F1, F2) :- genre(F1, A), genre(F2, B), A == B.
-same_director(F1, F2) :- film_director(F1, A), film_director(F2, B), A == B.
-same_star(F1, F2) :- star(F1, A), star(F2, B), A == B.
+% Find movies with same genre
+same_genre(Movie1, Movie2) :- genre(Movie1, A), genre(Movie2, B), A = B, Movie1 \= Movie2.
+% Find movies with same director
+same_director(Movie1, Movie2) :- film_director(Movie1, A), film_director(Movie2, B), A = B,  Movie1 \= Movie2.
+% Find movies with same star
+same_star(Movie1, Movie2) :- star(Movie1, A), star(Movie2, B), A = B,  Movie1 \= Movie2.
 
-similar_movies(F1, F2) :- same_genre(F1, F2), same_director(F1, F2).
+% Find similar movies
+similar_movies(Movie1, Movie2) :- same_genre(Movie1, Movie2), same_director(Movie1, Movie2).
+similar_movies(Movie1, Movie2) :- same_genre(Movie1, Movie2), same_star(Movie1, Movie2).
+similar_movies(Movie1, Movie2) :- same_star(Movie1, Movie2), same_director(Movie1, Movie2).
+
+% Advise some movies to watch
+advise_movie(MovieIWatched):- findall(M, similar_movies(MovieIWatched, M), Result),
+	sort(Result, MovieList), 
+	forall(member(Movie, MovieList), (write(Movie), nl)).
+	

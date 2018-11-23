@@ -64,6 +64,7 @@ class Movie:
 
             break
 
+
     @staticmethod
     def __split_list (txt, seps):
         """
