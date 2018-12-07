@@ -166,5 +166,6 @@ class MovieKnowledgeBase:
 
 
 
-mkb = MovieKnowledgeBase()
-mkb.base_session()
+if __name__ == '__main__':
+    mkb = MovieKnowledgeBase()
+    mkb.base_session()

@@ -251,3 +251,122 @@
 :- assert(star('Solo: A Star Wars Story', 'Emilia Clarke')).
 
 
+% Home Alone %
+:- assert(movie('Home Alone')).
+
+% Genres
+:- assert(genre('Home Alone', 'Comedy')).
+:- assert(genre('Home Alone', 'Family')).
+
+% Film directors
+:- assert(film_director('Home Alone', 'Chris Columbus')).
+
+% Stars
+:- assert(star('Home Alone', 'Macaulay Culkin')).
+:- assert(star('Home Alone', 'Joe Pesci')).
+:- assert(star('Home Alone', 'Daniel Stern')).
+
+
+% The Avengers %
+:- assert(movie('The Avengers')).
+
+% Genres
+:- assert(genre('The Avengers', 'Action')).
+:- assert(genre('The Avengers', 'Adventure')).
+:- assert(genre('The Avengers', 'Sci-Fi')).
+
+% Film directors
+:- assert(film_director('The Avengers', 'Joss Whedon')).
+
+% Stars
+:- assert(star('The Avengers', 'Robert Downey Jr.')).
+:- assert(star('The Avengers', 'Chris Evans')).
+:- assert(star('The Avengers', 'Scarlett Johansson')).
+
+
+% Avengers: Age of Ultron %
+:- assert(movie('Avengers: Age of Ultron')).
+
+% Genres
+:- assert(genre('Avengers: Age of Ultron', 'Action')).
+:- assert(genre('Avengers: Age of Ultron', 'Adventure')).
+:- assert(genre('Avengers: Age of Ultron', 'Sci-Fi')).
+
+% Film directors
+:- assert(film_director('Avengers: Age of Ultron', 'Joss Whedon')).
+
+% Stars
+:- assert(star('Avengers: Age of Ultron', 'Robert Downey Jr.')).
+:- assert(star('Avengers: Age of Ultron', 'Chris Evans')).
+:- assert(star('Avengers: Age of Ultron', 'Mark Ruffalo')).
+
+
+% Avengers: Infinity War %
+:- assert(movie('Avengers: Infinity War')).
+
+% Genres
+:- assert(genre('Avengers: Infinity War', 'Action')).
+:- assert(genre('Avengers: Infinity War', 'Adventure')).
+:- assert(genre('Avengers: Infinity War', 'Fantasy')).
+
+% Film directors
+:- assert(film_director('Avengers: Infinity War', 'Anthony Russo')).
+:- assert(film_director('Avengers: Infinity War', 'Joe Russo')).
+
+% Stars
+:- assert(star('Avengers: Infinity War', 'Robert Downey Jr.')).
+:- assert(star('Avengers: Infinity War', 'Chris Hemsworth')).
+:- assert(star('Avengers: Infinity War', 'Mark Ruffalo')).
+
+
+% Dead End %
+:- assert(movie('Dead End')).
+
+% Genres
+:- assert(genre('Dead End', 'Adventure')).
+:- assert(genre('Dead End', 'Horror')).
+:- assert(genre('Dead End', 'Mystery')).
+
+% Film directors
+:- assert(film_director('Dead End', 'Jean-Baptiste Andrea')).
+:- assert(film_director('Dead End', 'Fabrice Canepa')).
+
+% Stars
+:- assert(star('Dead End', 'Ray Wise')).
+:- assert(star('Dead End', 'Lin Shaye')).
+:- assert(star('Dead End', 'Mick Cain')).
+
+
+% Sinister %
+:- assert(movie('Sinister')).
+
+% Genres
+:- assert(genre('Sinister', 'Horror')).
+:- assert(genre('Sinister', 'Mystery')).
+:- assert(genre('Sinister', 'Thriller')).
+
+% Film directors
+:- assert(film_director('Sinister', 'Scott Derrickson')).
+
+% Stars
+:- assert(star('Sinister', 'Ethan Hawke')).
+:- assert(star('Sinister', 'Juliet Rylance')).
+:- assert(star('Sinister', 'James Ransone')).
+
+
+% Sanatorium %
+:- assert(movie('Sanatorium')).
+
+% Genres
+:- assert(genre('Sanatorium', 'Horror')).
+:- assert(genre('Sanatorium', 'Thriller')).
+
+% Film directors
+:- assert(film_director('Sanatorium', 'Brant Sersen')).
+
+% Stars
+:- assert(star('Sanatorium', 'Don Fanelli')).
+:- assert(star('Sanatorium', 'Charlie Fersko')).
+:- assert(star('Sanatorium', 'DJ Hazard')).
+
+
