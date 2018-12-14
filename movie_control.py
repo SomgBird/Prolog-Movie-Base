@@ -93,14 +93,6 @@ class MovieKnowledgeBase:
             return
 
 
-        #todo read old base
-
-
-    def __del__(self):
-        # todo
-        return
-
-
     def __write_base (self):
         """
         Create prolog file with facts about movies.
@@ -145,16 +137,6 @@ class MovieKnowledgeBase:
                 break
 
         self.__write_base()
-
-
-    def __read_base (self, base):
-        # todo
-        return
-
-
-    def del_movie (self, movie_name):
-        # todo
-        return
 
 
     def add_movie (self, movie):
