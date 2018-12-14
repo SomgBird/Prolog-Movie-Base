@@ -35,17 +35,17 @@ print_all_stars :- findall(Star, star(_, Star), Result),
 	forall(member(Star, DirList), (write(Star), nl)).
 	
 % Print all movies with selected star
-print_movies_with_star(Star) :- findall(Movie, star(Movie, Star), Result),
+print_movies_by_star(Star) :- findall(Movie, star(Movie, Star), Result),
 	sort(Result, MovieList), 
 	forall(member(Movie, MovieList), (write(Movie), nl)).
 	
 % Print all movies with selected director
-print_movies_with_director(Dir) :- findall(Movie, film_director(Movie, Dir), Result),
+print_movies_by_director(Dir) :- findall(Movie, film_director(Movie, Dir), Result),
 	sort(Result, MovieList), 
 	forall(member(Movie, MovieList), (write(Movie), nl)).
 
 % Print all movies with selected genre
-print_movies_with_genre(Genre) :- findall(Movie, genre(Movie, Genre), Result),
+print_movies_by_genre(Genre) :- findall(Movie, genre(Movie, Genre), Result),
 	sort(Result, MovieList), 
 	forall(member(Movie, MovieList), (write(Movie), nl)).
 
